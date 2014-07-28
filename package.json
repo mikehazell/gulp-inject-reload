@@ -1,0 +1,32 @@
+{
+  "name": "gulp-inject-reload",
+  "version": "0.0.0",
+  "description": "Injects a Live Reload script into your files",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Schmicko/gulp-inject-reload.git"
+  },
+  "keywords": [
+    "gulp",
+    "livereload"
+  ],
+  "author": "Michael Hazell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Schmicko/gulp-inject-reload/issues"
+  },
+  "homepage": "https://github.com/Schmicko/gulp-inject-reload",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "gulp": "^3.8.6",
+    "mocha": "^1.21.0"
+  },
+  "dependencies": {
+    "event-stream": "^3.1.7",
+    "gulp-util": "^3.0.0"
+  }
+}
