@@ -1,6 +1,6 @@
 {
   "name": "gulp-inject-reload",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Injects a Live Reload script into your files",
   "main": "index.js",
   "scripts": {
