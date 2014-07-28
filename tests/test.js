@@ -28,7 +28,7 @@ describe('inject livereload', function () {
             path: 'test/fixtures/index.html',
             contents: new Buffer(fixtureFile)
         });
-        var expectedScript = "\n<script>document.write('<script src=\"http://\" + (location.host || \"localhost\").split(\":\")[0] + \":35729/livereload.js?snipver=1\"></script>');</script>";
+        var expectedScript = "\n<script>document.write('<script src=\"http://\' + (location.host || \"localhost\").split(\":\")[0] + ':35729/livereload.js?snipver=1\"></' + 'script>');</script>";
         var expectedFile = fixtureFile + expectedScript;
 
         var injectStream = injectReload();
@@ -54,8 +54,7 @@ describe('inject livereload', function () {
             script: 'test.js',
             snipver: 2
         };
-
-        var expectedScript = "\n<script>document.write('<script src=\"http://localhost:1234/test.js?snipver=2\"></script>');</script>";
+        var expectedScript = "\n<script>document.write('<script src=\"http://localhost:1234/test.js?snipver=2\"></' + 'script>');</script>";
         var expectedFile = fixtureFile + expectedScript;
 
         var injectStream = injectReload(options);

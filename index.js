@@ -12,13 +12,13 @@ var es = require('event-stream'),
 
 var defaults = {
         port: 35729,
-        host: 'http://" + (location.host || "localhost").split(":")[0] + "',
+        host: 'http://\' + (location.host || "localhost").split(":")[0] + \'',
         script: 'livereload.js',
         snipver: 1
     },
     template = function(opts){
         var scriptSrc = opts.host + ':' + opts.port + '/' + opts.script + '?snipver=' + opts.snipver;
-        return '\n<script>document.write(\'<script src="' + scriptSrc + '"></script>\');</script>';
+        return '\n<script>document.write(\'<script src="' + scriptSrc + '"></\' + \'script>\');</script>';
     };
 
 function injectReload(filecontents, opts){
