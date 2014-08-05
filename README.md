@@ -23,7 +23,7 @@ Works with [gulp-livereload](https://www.npmjs.org/package/gulp-livereload/).
 
 ```html
     ... html content of index.html ...
-    <script>document.write('<script src="http://localhost:35729/livereload.js?snipver=1"></script>');</script>
+    <script>document.write('<script src="http://localhost:35729/livereload.js?snipver=1"></'+'script>');</script>
 ```
 
 ## Options
