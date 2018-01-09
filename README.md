@@ -1,5 +1,5 @@
 # gulp-inject-reload
-[![Build Status](https://travis-ci.org/Schmicko/gulp-inject-reload.svg?branch=master)](https://travis-ci.org/Schmicko/gulp-inject-reload)
+[![Build Status](https://travis-ci.org/mikehazell/gulp-inject-reload.svg?branch=master)](https://travis-ci.org/mikehazell/gulp-inject-reload)
 [![NPM version](https://badge.fury.io/js/gulp-inject-reload.svg)](http://badge.fury.io/js/gulp-inject-reload)
 
 A simple gulp plugin to inject the livereload script to the end of html files.
